@@ -4,3 +4,36 @@ CSE806-Software Production Engineering Miniproject creating a CI/CD pipeline usi
 Name: Jaskirat Singh Sanghera
 
 Roll Number: PGP2024011
+
+# Calculator CI/CD Pipeline
+
+This project demonstrates a CI/CD pipeline for a command-line calculator application using:
+- Jenkins for continuous integration
+- Docker for containerization
+- Ansible for deployment automation
+- ngrok for exposing the application
+- GitHub for source code management
+
+## Features
+
+The calculator supports the following operations:
+- Square Root
+- Factorial
+- Natural Logarithm
+- Exponentiation
+
+## Pipeline Steps
+
+1. Code is pushed to GitHub
+2. Jenkins pulls the code and runs tests
+3. Docker builds an image of the application
+4. Ansible deploys the Docker container
+5. ngrok exposes the application publicly
+
+## Setup Instructions
+
+1. Clone this repository
+2. Run `jenkins-setup.sh` to install required tools
+3. Configure Jenkins with GitHub webhook
+4. Update ngrok.yml with your authentication token
+5. Run the pipeline
