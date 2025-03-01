@@ -1,12 +1,12 @@
 ---
 - name: Pull Docker Image from Docker Hub
   hosts: localhost
-  remote_user: jusky
+  remote_user: your_username
   become: false
   tasks:
     - name: Pull Docker Image
       docker_image:
-        name: "juskythehusky/spe-miniproject"  # Use your Docker Hub username
+        name: "juskythehusky/spe-miniproject"
         source: pull
       register: docker_pull_result
 
@@ -18,6 +18,10 @@
       service:
         name: docker
         state: started
-
+        
+    - name: Remove existing container if it exists
+      shell: docker rm -f calculator || true
+      
     - name: Running container
       shell: docker run -it -d --name calculator juskythehusky/spe-miniproject
+
