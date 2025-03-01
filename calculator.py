@@ -115,7 +115,5 @@ def calculator_shell():
 
 if __name__ == "__main__":
     calculator_shell()
-    #just testing the webhooks
-
 
 
