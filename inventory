@@ -1,1 +1,1 @@
-localhost ansible_user=jusky ansible_ssh_pass=Ubuntu
+localhost localhost ansible_connection=local
