@@ -29,11 +29,3 @@ The calculator supports the following operations:
 3. Docker builds an image of the application
 4. Ansible deploys the Docker container
 5. ngrok exposes the application publicly
-
-## Setup Instructions
-
-1. Clone this repository
-2. Run `jenkins-setup.sh` to install required tools
-3. Configure Jenkins with GitHub webhook
-4. Update ngrok.yml with your authentication token
-5. Run the pipeline
