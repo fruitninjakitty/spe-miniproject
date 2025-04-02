@@ -25,5 +25,3 @@ The calculator supports the following operations:
 3. Docker builds an image of the application
 4. Ansible deploys the Docker container
 5. ngrok exposes the application publicly
-
-#test for the viva
